@@ -2,18 +2,15 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.sanchezih</groupId>
-	<artifactId>CounterWebApp</artifactId>
+	<artifactId>jsp-mysql-crud</artifactId>
 	<packaging>war</packaging>
 	<version>1.0-SNAPSHOT</version>
-	<name>CounterWebApp Maven Webapp</name>
+	<name>jsp-mysql-crud Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<jdk.version>1.7</jdk.version>
-		<spring.version>4.1.1.RELEASE</spring.version>
 		<jstl.version>1.2</jstl.version>
 		<junit.version>4.11</junit.version>
-		<logback.version>1.0.13</logback.version>
-		<jcl-over-slf4j.version>1.7.5</jcl-over-slf4j.version>
 	</properties>
 
 	<dependencies>
@@ -58,7 +55,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>CounterWebApp</finalName>
+		<finalName>jsp-mysql-crud</finalName>
 
 		<plugins>
 			<!-- Eclipse project -->
@@ -83,16 +80,6 @@
 				<configuration>
 					<source>${jdk.version}</source>
 					<target>${jdk.version}</target>
-				</configuration>
-			</plugin>
-
-			<!-- For Tomcat -->
-			<plugin>
-				<groupId>org.apache.tomcat.maven</groupId>
-				<artifactId>tomcat7-maven-plugin</artifactId>
-				<version>2.2</version>
-				<configuration>
-					<path>/CounterWebApp</path>
 				</configuration>
 			</plugin>
 
